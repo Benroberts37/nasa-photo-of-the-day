@@ -3,7 +3,7 @@ import React from 'react'
 const dummyData = {
     date: "2021-12-23",
     explanation: "some dummy data",
-    hdurl: "https://agod.nasa.goc/apid/image",
+    hdurl: "https://apod.nasa.gov/apod/image/2112/20211221Tezel.jpg",
     title: "Three planets and a comet"
   }
 

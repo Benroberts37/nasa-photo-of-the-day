@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 
 import "./App.css";
-
+import styled from 'styled-components';
 
 import NasaPhoto from './Components/NasaPhoto';
 
@@ -19,10 +19,16 @@ function App() {
     })
   }, [])
 
+  const WrapperDiv = styled.div`
+    text-align: center;
+    font-family: sans-serif;
+    color: green;
+  `
+
   return (
-    <div className="App">
+    <WrapperDiv className="App">
        {data && <NasaPhoto photo={data} />}
-    </div>
+    </WrapperDiv>
   );
 }
 
